@@ -81,7 +81,7 @@ let colors_name = "hybrid_reverse"
 "}}}
 " GUI And Cterm Palettes:"{{{
 " ----------------------------------------------------------------------------
-if has("gui_running")
+if has("gui_running") || ($NVIM_TUI_ENABLE_TRUE_COLOR && has("nvim"))
   let s:vmode      = "gui"
   let s:background = "#1d1f21"
   let s:foreground = "#c5c8c6"
