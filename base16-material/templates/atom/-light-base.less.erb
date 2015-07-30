@@ -1,0 +1,225 @@
+// Atom template by Jan T. Sott (https://github.com/idleberg/)
+// Base16 scheme and Base16 Builder by Chris Kempson (https://github.com/chriskempson)
+
+@import "base16-<%= @slug %>-light-syntax-variables.less";
+
+atom-text-editor, // <- remove when Shadow DOM can't be disabled
+:host {
+  color: @syntax-text-color;
+  background-color: @syntax-background-color;
+  .gutter {
+    color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color;
+  }
+
+  .gutter .line-number.cursor-line {
+    color: @syntax-gutter-text-color-selected;
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .gutter .line-number.cursor-line-no-selection {
+    color: @syntax-gutter-text-color-selected;
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line-no-selection, .line.cursor-line {
+    background-color: rgba(176, 176, 176, 0.33);
+  }
+
+}
+
+.variable.parameter.function {
+  color: #<%= @base["02"]["hex"] %>;
+}
+
+.comment, .punctuation.definition.comment {
+  color: #<%= @base["04"]["hex"] %>;
+}
+
+.punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+  color: #<%= @base["02"]["hex"] %>;
+}
+
+.none {
+  color: #<%= @base["02"]["hex"] %>;
+}
+
+.keyword.operator {
+  color: #<%= @base["02"]["hex"] %>;
+}
+
+.keyword {
+  color: #<%= @base["0E"]["hex"] %>;
+}
+
+.variable {
+  color: #<%= @base["08"]["hex"] %>;
+}
+
+.entity.name.function, .meta.require, .support.function.any-method {
+  color: #<%= @base["0D"]["hex"] %>;
+}
+
+.support.class, .entity.name.class, .entity.name.type.class {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.meta.class {
+  color: #<%= @base["01"]["hex"] %>;
+}
+
+.keyword.other.special-method {
+  color: #<%= @base["0D"]["hex"] %>;
+}
+
+.storage {
+  color: #<%= @base["0E"]["hex"] %>;
+}
+
+.support.function {
+  color: #<%= @base["0C"]["hex"] %>;
+}
+
+.string, .constant.other.symbol, .entity.other.inherited-class {
+  color: #<%= @base["0B"]["hex"] %>;
+}
+
+.constant.numeric {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.none {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.none {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.constant {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.entity.name.tag {
+  color: #<%= @base["08"]["hex"] %>;
+}
+
+.entity.other.attribute-name {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.entity.other.attribute-name.id, .punctuation.definition.entity {
+  color: #<%= @base["0D"]["hex"] %>;
+}
+
+.meta.selector {
+  color: #<%= @base["0E"]["hex"] %>;
+}
+
+.none {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.markup.heading .punctuation.definition.heading, .entity.name.section {
+  color: #<%= @base["0D"]["hex"] %>;
+}
+
+.keyword.other.unit {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.markup.bold, .punctuation.definition.bold {
+  font-weight: bold;
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.markup.italic, .punctuation.definition.italic {
+  font-style: italic;
+  color: #<%= @base["0E"]["hex"] %>;
+}
+
+.markup.raw.inline {
+  color: #<%= @base["0B"]["hex"] %>;
+}
+
+.string.other.link {
+  color: #<%= @base["08"]["hex"] %>;
+}
+
+.meta.link {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.markup.list {
+  color: #<%= @base["08"]["hex"] %>;
+}
+
+.markup.quote {
+  color: #<%= @base["09"]["hex"] %>;
+}
+
+.meta.separator {
+  color: #<%= @base["02"]["hex"] %>;
+  background-color: #<%= @base["06"]["hex"] %>;
+}
+
+.markup.inserted {
+  color: #<%= @base["0B"]["hex"] %>;
+}
+
+.markup.deleted {
+  color: #<%= @base["08"]["hex"] %>;
+}
+
+.markup.changed {
+  color: #<%= @base["0E"]["hex"] %>;
+}
+
+.constant.other.color {
+  color: #<%= @base["0C"]["hex"] %>;
+}
+
+.string.regexp {
+  color: #<%= @base["0C"]["hex"] %>;
+}
+
+.constant.character.escape {
+  color: #<%= @base["0C"]["hex"] %>;
+}
+
+.punctuation.section.embedded, .variable.interpolation {
+  color: #<%= @base["0F"]["hex"] %>;
+}
+
+.invalid.illegal {
+  color: #<%= @base["07"]["hex"] %>;
+  background-color: #<%= @base["08"]["hex"] %>;
+}

@@ -1,0 +1,74 @@
+<EditorStyle name="Base16 <%= @scheme %> Dark"
+             _description="Color schemes for hackers.">
+  <!--
+     - https://github.com/chriskempson/base16
+     - Scheme: <%= @author %>
+     -->
+  <Color name="base00" value="#<%= @base["00"]["hex"] %>"/>
+  <Color name="base01" value="#<%= @base["01"]["hex"] %>"/>
+  <Color name="base02" value="#<%= @base["02"]["hex"] %>"/>
+  <Color name="base03" value="#<%= @base["03"]["hex"] %>"/>
+  <Color name="base04" value="#<%= @base["04"]["hex"] %>"/>
+  <Color name="base05" value="#<%= @base["05"]["hex"] %>"/>
+  <Color name="base06" value="#<%= @base["06"]["hex"] %>"/>
+  <Color name="base07" value="#<%= @base["07"]["hex"] %>"/>
+  <Color name="base08" value="#<%= @base["08"]["hex"] %>"/>
+  <Color name="base09" value="#<%= @base["09"]["hex"] %>"/>
+  <Color name="base0A" value="#<%= @base["0A"]["hex"] %>"/>
+  <Color name="base0B" value="#<%= @base["0B"]["hex"] %>"/>
+  <Color name="base0C" value="#<%= @base["0C"]["hex"] %>"/>
+  <Color name="base0D" value="#<%= @base["0D"]["hex"] %>"/>
+  <Color name="base0E" value="#<%= @base["0E"]["hex"] %>"/>
+  <Color name="base0F" value="#<%= @base["0F"]["hex"] %>"/>
+
+  <!-- Text -->
+  <Style name="text" color="base05" bgColor="base00"/>
+  <Style name="text.background.readonly" color="base00"/>
+  <Style name="text.background.searchresult" color="base0F"/>
+  <Style name="text.background.searchresult-main" color="base09"/>
+  <Style name="text.preprocessor" color="base0C"/>
+  <Style name="text.selection" bgColor="base02"/>
+
+  <!-- Keywords -->
+  <Style name="keyword" color="base0E"/>
+  <Style name="keyword.access" color="base08" weight="Bold"/>
+  <Style name="keyword.exceptions" color="base08"/>
+  <Style name="keyword.jump" color="base08" weight="Bold"/>
+  <Style name="keyword.misc" color="base0A"/>
+  <Style name="keyword.operator" color="base08" weight="Bold"/>
+  <Style name="keyword.semantic.error" color="base07" bgColor="base08"/>
+  <Style name="keyword.semantic.field" color="base05"/>
+  <Style name="keyword.semantic.method" color="base05"/>
+  <Style name="keyword.semantic.property" color="base05"/>
+  <Style name="keyword.semantic.type" color="base0A"/>
+  <Style name="keyword.type" color="base0A"/>
+
+  <!-- Miscellaneous -->
+  <Style name="comment" color="base03"/>
+  <Style name="comment.keyword.todo" color="base0A" bgColor="base01"/>
+  <Style name="constant" color="base09"/>
+  <Style name="constant.language.void" color="base0A"/>
+  <Style name="iconbar" color="base01"/>
+  <Style name="iconbar.separator" color="base02"/>
+  <Style name="linenumber" color="base03" bgColor="base00"/>
+  <Style name="marker.bracket" color="base03" bgColor="base02"/>
+  <Style name="marker.line" color="base01"/>
+  <Style name="marker.ruler" color="base01"/>
+  <Style name="string" color="base0B"/>
+  <Style name="string.escape" color="base0F"/>
+  <Style name="tooltip" color="base03" bgColor="base01"/>
+  <Style name="tooltip.pager.text" color="base06"/>
+  <Style name="tooltip.pager.triangle" color="base06"/>
+  <Style name="xml" color="base05"/>
+  <Style name="xml.cdata" color="base0B"/>
+  <Style name="xml.name" color="base0D"/>
+  <Style name="xml.attribute" color="base0A"/>
+
+  <!-- Diff -->
+  <Style name="diff.header" color="base0D" weight="Bold"/>
+  <Style name="diff.header-newfile" color="base0B" weight="Bold"/>
+  <Style name="diff.header-oldfile" color="base08" weight="Bold"/>
+  <Style name="diff.line-added" color="base0B"/>
+  <Style name="diff.line-removed" color="base08"/>
+  <Style name="diff.location" color="base0A"/>
+</EditorStyle>

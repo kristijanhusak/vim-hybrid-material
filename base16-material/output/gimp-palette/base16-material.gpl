@@ -1,0 +1,20 @@
+GIMP Palette
+Name: Base16 material
+Columns: 16
+#
+  38  50  56	base00
+  38  50  56	base01
+  55  71  79	base02
+  112  120  128	base03
+  181  189  104	base04
+  236  239  239	base05
+  236  239  239	base06
+  255  255  255	base07
+  204  102  102	base08
+  204  102  102	base09
+  240  198  116	base0A
+  181  189  104	base0B
+  138  190  183	base0C
+  129  162  190	base0D
+  178  148  187	base0E
+  204  102  102	base0F

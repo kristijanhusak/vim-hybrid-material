@@ -1,0 +1,86 @@
+<%
+# Mou Markdown Editor Template
+# Chris Kempson (http://chriskempson.com)
+  
+%>editor
+foreground: <%= @base["05"]["hex"] %>
+background: <%= @base["00"]["hex"] %>
+caret: <%= @base["05"]["hex"] %>
+
+editor-selection
+foreground: <%= @base["05"]["hex"] %>
+background: <%= @base["02"]["hex"] %>
+
+H1
+foreground: <%= @base["0D"]["hex"] %>
+font-style: bold
+font-size: 24px
+
+H2
+foreground: <%= @base["0D"]["hex"] %>
+font-style: bold
+font-size: 20px
+
+H3
+foreground: <%= @base["0D"]["hex"] %>
+font-size: 17px
+
+H4
+foreground: <%= @base["0D"]["hex"] %>
+font-size: 15px
+
+H5
+foreground: <%= @base["0D"]["hex"] %>
+font-size: 13px
+
+H6
+foreground: <%= @base["0D"]["hex"] %>
+font-size: 11px
+
+EMPH
+foreground: <%= @base["0E"]["hex"] %>
+font-style: italic
+
+STRONG
+foreground: <%= @base["0A"]["hex"] %>
+font-style: bold
+
+HRULE
+foreground: <%= @base["05"]["hex"] %>
+background: <%= @base["02"]["hex"] %>
+
+LIST_BULLET
+foreground: <%= @base["08"]["hex"] %>
+
+LIST_ENUMERATOR
+foreground: <%= @base["08"]["hex"] %>
+
+LINK
+foreground: <%= @base["09"]["hex"] %>
+
+AUTO_LINK_URL
+foreground: <%= @base["0C"]["hex"] %>
+
+AUTO_LINK_EMAIL
+foreground: <%= @base["0C"]["hex"] %>
+
+REFERENCE
+foreground: <%= @base["04"]["hex"] %>
+
+IMAGE
+foreground: <%= @base["0C"]["hex"] %>
+
+CODE
+foreground: <%= @base["0B"]["hex"] %>
+
+VERBATIM
+foreground: <%= @base["0B"]["hex"] %>
+
+HTML_ENTITY
+foreground: <%= @base["0F"]["hex"] %>
+
+COMMENT
+foreground: <%= @base["03"]["hex"] %>
+
+BLOCKQUOTE
+foreground: <%= @base["09"]["hex"] %>

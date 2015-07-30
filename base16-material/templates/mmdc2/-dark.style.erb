@@ -1,0 +1,124 @@
+// ---
+// [MultiMarkdown Composer 2](http://multimarkdown.com) style.
+// Name: Base16 <%= @scheme %>
+// Author: <%= @author %>
+// Built: By [Base16 Builder](https://github.com/chriskempson/base16-builder)
+// Build date: <%= Time.now.strftime('%F') %>
+// ---
+// Template based on [Pretentious](http://support.multimarkdown.com/discussions/extras-style-sheets-etc/4-pretentious) 1.0 by Brett Terpstra.
+// [Style syntax description](http://support.multimarkdown.com/kb/style-sheets/how-do-i-create-a-custom-style-sheet)
+// Author: [Romain X.](https://github.com/romainx)
+// Version: 1.1
+// Date: 2014-11-02
+// ---
+
+{
+    // Default settings
+    
+    // Base colors
+    foregroundColor = <%= @base["06"]["hex"] %>;
+    // Markup will be quite invisible
+    markupForegroundColor = <%= @base["01"]["hex"] %>;
+    backgroundColor = <%= @base["00"]["hex"] %>;
+    // A colored cursor
+    caretColor = <%= @base["09"]["hex"] %>;
+
+    // Selection
+    selectionColor = <%= @base["02"]["hex"] %>;
+
+    // Paragraph
+    lineLength = 90;
+	lineHeight = 1.2;
+    
+    // Font
+    defaultFontSize = 12;
+	
+    // Mono
+    monoFontName = Monaco;
+	monoFontSize = 12;
+    
+    default = {
+        fontName = Menlo;
+        fontSize = 12;
+        kerning = 0.15;
+    };
+
+    // Mode
+    autoZoomHorizontalPadding = 5;
+
+    // Padding to use when Auto Zoom is off
+    horizontalPadding = 5;
+    verticalPadding = 5;
+
+    // CSS
+    // Only the following properties are updated according to the scheme:
+    // - Background color
+    // - Foreground color
+    // - Link colors
+    css = "article,aside,details,figcaption,figure,footer,header,hgroup,n(http://support.multimarkdown.com/discussions/extras-style-sheets-etc/4-pretentious),section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type='button'],input[type='reset'],input[type='submit']{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type='checkbox'],input[type='radio']{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type='search']{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type='search']::-webkit-search-decoration,input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body {background:#<%= @base["00"]["hex"] %>;color:#<%= @base["06"]["hex"] %>;font-family: Palatino, Georgia, serif; font-size:16px;line-height:170%;text-align:justify; padding: 20px} table{margin-bottom:2em;padding:0;font-size:14px;border-collapse:collapse;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.35);-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.35);box-shadow:1px 1px 2px rgba(0,0,0,0.35);width:70%;margin:0 auto 2em auto;border:1px solid #ddd;border-collapse:separate;*border-collapse:collapse;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}table caption,table col,table colgroup,table table,table tbody,table td,table tfoot,table th,table thead,table tr{border-spacing:0;font-family:Helvetica,Arial,sans-serif;font-weight:400;font-size:24px}table caption{display:table-caption;font-weight:700;font-size:12px;text-transform:uppercase;font-family:Palatino;background:rgba(22,22,22,0.75);color:#EEE;padding:8px 4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:4px 0;-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.35);-moz-box-shadow:2px 2px 2px rgba(0,0,0,0.35);box-shadow:2px 2px 2px rgba(0,0,0,0.35)}table col{display:table-column}table colgroup{display:table-column-group}table tbody{display:table-row-group}table tfoot{display:table-footer-group}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left}table th{padding-top:9px;font-family:Palatino;font-size:14px;font-weight:700!important;text-transform:uppercase;vertical-align:middle;text-align:center}table td{vertical-align:top;border-top:1px solid #ddd;font-family:Palatino,georgia,serif;font-size:14px!important}table tbody th{border-top:1px solid #ddd;vertical-align:top}table th+th,table td+td,table th+td{border-left:1px solid #ddd}table thead tr:first-child th:first-child,table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0}table thead tr:first-child th:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(0,0,0,0.06)}table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0}table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px}table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0}table tbody tr:nth-child(odd){background-color:rgba(0,0,0,0.03)}figure{display:inline-block;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#444;position:absolute;left:0;bottom:-24px;width:98%;padding:1%;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}ul{list-style:circle}a:link,a:visited{text-decoration:none;border-bottom:1px solid;color:#<%= @base["0C"]["hex"] %>;}a:hover,a:active{color:#<%= @base["0D"]["hex"] %>;}";
+    
+    // All headings, can also be detailed by level
+    heading =     {
+        foregroundColor = <%= @base["0D"]["hex"] %>;
+        bold = 1;
+    };
+    
+    // Links has reference color
+    link =     {
+        foregroundColor = <%= @base["04"]["hex"] %>;
+    };
+    
+    // Formatting that is applied to "clickable" links
+    URL = {
+        foregroundColor = <%= @base["0C"]["hex"] %>;
+        italic = 1;
+        // 4 : Very thick underline
+        underline = 4;
+    };
+    
+    // List
+    // Markers will be highlighted
+    list = {
+        markupForegroundColor = <%= @base["08"]["hex"] %>;
+    };
+
+    // Strong & Emphasis definition
+    bold =     {
+        foregroundColor = <%= @base["0A"]["hex"] %>;
+		bold = 1;
+    };
+    italic =     {
+		foregroundColor = <%= @base["0E"]["hex"] %>;
+        italic = 1;
+    };
+    boldAndItalic =     {
+		foregroundColor = <%= @base["0A"]["hex"] %>;
+        bold = 1;
+		italic = 1;
+    };
+    
+    // Code & Code block
+    codeSpan =     {
+		foregroundColor = <%= @base["0B"]["hex"] %>;
+        mono = 1;
+    };
+    codeBlock = {
+		foregroundColor = <%= @base["0B"]["hex"] %>;
+		mono = 1;
+	};
+
+    // Metadata YAML for e.g.
+	metadata = {
+		foregroundColor = <%= @base["04"]["hex"] %>;
+	};
+
+    // XML comments
+    comment = {
+        foregroundColor = <%= @base["03"]["hex"] %>;
+    };
+    
+    // Blockquote
+    blockquote = {
+        foregroundColor = <%= @base["05"]["hex"] %>;
+    };
+}

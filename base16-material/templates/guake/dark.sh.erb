@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Base16 <%= @scheme %> - Guake Terminal color scheme install script
+# <%= @author %>
+
+
+gconftool-2 -s -t string /apps/guake/style/background/color "#<%= @base["00"]["dhex"] %>"
+gconftool-2 -s -t string /apps/guake/style/font/color "#<%= @base["05"]["dhex"] %>"
+gconftool-2 -s -t string /apps/guake/style/font/palette "#<%= @base["00"]["dhex"] %>:#<%= @base["08"]["dhex"] %>:#<%= @base["0B"]["dhex"] %>:#<%= @base["0A"]["dhex"] %>:#<%= @base["0D"]["dhex"] %>:#<%= @base["0E"]["dhex"] %>:#<%= @base["0C"]["dhex"] %>:#<%= @base["05"]["dhex"] %>:#<%= @base["03"]["dhex"] %>:#<%= @base["08"]["dhex"] %>:#<%= @base["0B"]["dhex"] %>:#<%= @base["0A"]["dhex"] %>:#<%= @base["0D"]["dhex"] %>:#<%= @base["0E"]["dhex"] %>:#<%= @base["0C"]["dhex"] %>:#<%= @base["07"]["dhex"] %>"

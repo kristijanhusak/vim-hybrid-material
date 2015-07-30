@@ -1,0 +1,122 @@
+# Geany Base16 Template
+# Rob Loach (http://robloach.net)
+#
+# Copyright (c) 2013 Rob Loach
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+[theme_info]
+name=Base16 <%= @scheme %> Dark
+description=Base16 <%= @scheme %> provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications.
+version=0.2.2
+author=Rob Loach (http://robloach.net)
+url=http://github.com/robloach/base16-geany
+
+[named_styles]
+default=#<%= @base["07"]["hex"] %>;#<%= @base["00"]["hex"] %>;false;false
+error=#<%= @base["08"]["hex"] %>
+
+# Editor Styles
+#-------------------------------------------------------------------------------
+selection=#<%= @base["04"]["hex"] %>;#<%= @base["03"]["hex"] %>;false;true
+current_line=;#<%= @base["02"]["hex"] %>;true;false
+brace_good=#<%= @base["0A"]["hex"] %>;;true;false
+brace_bad=#<%= @base["08"]["hex"] %>;#<%= @base["02"]["hex"] %>;true;false
+margin_line_number=#<%= @base["03"]["hex"] %>;#<%= @base["02"]["hex"] %>;true;false
+margin_folding=#<%= @base["03"]["hex"] %>
+fold_symbol_highlight=#<%= @base["01"]["hex"] %>
+indent_guide=#<%= @base["02"]["hex"] %>
+caret=#<%= @base["05"]["hex"] %>
+marker_line=#<%= @base["07"]["hex"] %>
+marker_search=#<%= @base["07"]["hex"] %>;#<%= @base["0B"]["hex"] %>;false;false
+marker_mark=#<%= @base["07"]["hex"] %>;#<%= @base["0B"]["hex"] %>;
+call_tips=#<%= @base["04"]["hex"] %>;;false;false
+white_space=#<%= @base["03"]["hex"] %>;;true;false
+
+# Programming languages
+#-------------------------------------------------------------------------------
+comment=#<%= @base["04"]["hex"] %>
+comment_doc=#<%= @base["04"]["hex"] %>
+comment_line=#<%= @base["04"]["hex"] %>
+comment_line_doc=#<%= @base["04"]["hex"] %>
+comment_doc_keyword=#<%= @base["04"]["hex"] %>;;true;false
+comment_doc_keyword_error=#<%= @base["04"]["hex"] %>;;false;true
+
+number=#<%= @base["0B"]["hex"] %>
+number_1=#<%= @base["09"]["hex"] %>
+number_2=#<%= @base["09"]["hex"] %>
+
+type=#<%= @base["0A"]["hex"] %>;;true
+# Person.rb = Person
+class=#<%= @base["0A"]["hex"] %>;;true
+# Person.rb = initialize
+# PHP
+function=#<%= @base["0D"]["hex"] %>;;false;false
+parameter=#<%= @base["06"]["hex"] %>
+
+keyword=#<%= @base["0F"]["hex"] %>;;true;false
+# Person.rb = class, include, def, end, attr_accessor, etc
+# PHP = include_once(), if elseif else
+keyword_1=#<%= @base["0E"]["hex"] %>;;false;false
+keyword_2=#<%= @base["09"]["hex"] %>;;false;false
+keyword_3=#<%= @base["05"]["hex"] %>;;false;false
+keyword_4=#<%= @base["09"]["hex"] %>;;false;true
+
+identifier=#<%= @base["05"]["hex"] %>;;false;false
+# Person.rb = ActiveModel::Conversion
+identifier_1=#<%= @base["05"]["hex"] %>;;false;false
+identifier_2=#<%= @base["05"]["hex"] %>;;false;false
+identifier_3=#<%= @base["0D"]["hex"] %>;;true;false
+identifier_4=#<%= @base["0E"]["hex"] %>;;false;false
+
+string=#<%= @base["09"]["hex"] %>
+string_1=#<%= @base["0B"]["hex"] %>
+string_2=#<%= @base["0B"]["hex"] %>
+string_3=#<%= @base["05"]["hex"] %>
+string_4=#<%= @base["0D"]["hex"] %>
+string_eol=#<%= @base["0E"]["hex"] %>;;false;true
+
+character=string_1
+backtick=#<%= @base["0A"]["hex"] %>
+here_doc=#<%= @base["0A"]["hex"] %>
+scalar=#<%= @base["0A"]["hex"] %>
+label=#<%= @base["06"]["hex"] %>;;true;false
+# Person.rb = :name
+# PHP = $_GET
+preprocessor=#<%= @base["0D"]["hex"] %>
+regex=number_1
+operator=#<%= @base["0C"]["hex"] %>;;false;false
+decorator=#<%= @base["0D"]["hex"] %>;;false;false
+other=#<%= @base["08"]["hex"] %>
+
+# Markup-type languages
+#-------------------------------------------------------------------------------
+tag=#<%= @base["0A"]["hex"] %>;;true;false
+tag_unknown=#<%= @base["08"]["hex"] %>;;true;false
+tag_end=#<%= @base["0A"]["hex"] %>;;false;false
+attribute=#<%= @base["09"]["hex"] %>;;false;false
+attribute_unknown=#<%= @base["0B"]["hex"] %>;;false;false
+value=#<%= @base["0D"]["hex"] %>
+entity=#<%= @base["0A"]["hex"] %>
+
+# Diff
+#-------------------------------------------------------------------------------
+line_added=#<%= @base["0B"]["hex"] %>
+line_removed=#<%= @base["08"]["hex"] %>
+line_changed=#<%= @base["0D"]["hex"] %>

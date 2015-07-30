@@ -1,0 +1,200 @@
+<%
+@ratio = 50
+%><html>
+  <head>
+    <meta http-equiv="content-type" content="text/html">
+    <title>Base16 <%= @scheme %></title>
+    <style type="text/css" media="screen">
+      body { margin: 5% 20%; }
+      .scheme, .author, pre, .block { font-family: "menlo", monospace; }
+  	  td, th { font-size: 13px; font-weight: bold; padding: 15px; margin: 0 5px 10px 0; }
+      th { text-align: center; }
+  	  pre {
+  	    font-size: 14px;
+  	    padding: 10px 20px;
+  	  }
+  	  
+      .base00-background { background-color: #<%= @base["00"]["hex"] %>; }
+      .base01-background { background-color: #<%= @base["01"]["hex"] %>; }
+      .base02-background { background-color: #<%= @base["02"]["hex"] %>; }
+      .base03-background { background-color: #<%= @base["03"]["hex"] %>; }
+      .base04-background { background-color: #<%= @base["04"]["hex"] %>; }
+      .base05-background { background-color: #<%= @base["05"]["hex"] %>; }
+      .base06-background { background-color: #<%= @base["06"]["hex"] %>; }
+      .base07-background { background-color: #<%= @base["07"]["hex"] %>; }
+      .base08-background { background-color: #<%= @base["08"]["hex"] %>; }
+      .base09-background { background-color: #<%= @base["09"]["hex"] %>; }
+      .base0A-background { background-color: #<%= @base["0A"]["hex"] %>; }
+      .base0B-background { background-color: #<%= @base["0B"]["hex"] %>; }
+      .base0C-background { background-color: #<%= @base["0C"]["hex"] %>; }
+      .base0D-background { background-color: #<%= @base["0D"]["hex"] %>; }
+      .base0E-background { background-color: #<%= @base["0E"]["hex"] %>; }
+      .base0F-background { background-color: #<%= @base["0F"]["hex"] %>; }
+      
+      .base00 { color: #<%= @base["00"]["hex"] %>; }
+      .base01 { color: #<%= @base["01"]["hex"] %>; }
+      .base02 { color: #<%= @base["02"]["hex"] %>; }
+      .base03 { color: #<%= @base["03"]["hex"] %>; }
+      .base04 { color: #<%= @base["04"]["hex"] %>; }
+      .base05 { color: #<%= @base["05"]["hex"] %>; }
+      .base06 { color: #<%= @base["06"]["hex"] %>; }
+      .base07 { color: #<%= @base["07"]["hex"] %>; }
+      .base08 { color: #<%= @base["08"]["hex"] %>; }
+      .base09 { color: #<%= @base["09"]["hex"] %>; }
+      .base0A { color: #<%= @base["0A"]["hex"] %>; }
+      .base0B { color: #<%= @base["0B"]["hex"] %>; }
+      .base0C { color: #<%= @base["0C"]["hex"] %>; }
+      .base0D { color: #<%= @base["0D"]["hex"] %>; }
+      .base0E { color: #<%= @base["0E"]["hex"] %>; }
+      .base0F { color: #<%= @base["0F"]["hex"] %>; }
+
+      .background { background-color: #<%= @base['00']['hex'] %>; }
+      .background-intense { background-color: #<%= tint(@base["00"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .foreground { background-color: #<%= @base['05']['hex'] %>; }
+      .foreground-intense { background-color: #<%= tint(@base["05"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color0 { background-color: #<%= @base['00']['hex'] %>; }
+      .color0-intense { background-color: #<%= tint(@base["00"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color1 { background-color: #<%= @base['08']['hex'] %>; }
+      .color1-intense { background-color: #<%= tint(@base["08"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color2 { background-color: #<%= @base['0B']['hex'] %>; }
+      .color2-intense { background-color: #<%= tint(@base["0B"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color3 { background-color: #<%= @base['0A']['hex'] %>; }
+      .color3-intense { background-color: #<%= tint(@base["0A"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color4 { background-color: #<%= @base['0D']['hex'] %>; }
+      .color4-intense { background-color: #<%= tint(@base["0D"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color5 { background-color: #<%= @base['0E']['hex'] %>; }
+      .color5-intense { background-color: #<%= tint(@base["0E"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color6 { background-color: #<%= @base['0C']['hex'] %>; }
+      .color6-intense { background-color: #<%= tint(@base["0C"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+      .color7 { background-color: #<%= @base['05']['hex'] %>; }
+      .color7-intense { background-color: #<%= tint(@base["05"]["rgb"], @ratio).map{|x| x.to_s(16)}.join('') %>; }
+    </style>
+  </head>
+  <body>
+    <h1 class="scheme">Base16 <%= @scheme %></h1>
+    <p class="author"><%= @author %></p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Intense</th>
+        </tr>
+        <tr>
+          <td>Foreground</td>
+          <td class='foreground'>&nbsp;</td>
+          <td class='foreground-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Background</td>
+          <td class='background'>&nbsp;</td>
+          <td class='background-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 0 (Black)</td>
+          <td class='color0'>&nbsp;</td>
+          <td class='color0-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 1 (Red)</td>
+          <td class='color1'>&nbsp;</td>
+          <td class='color1-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 2 (Green)</td>
+          <td class='color2'>&nbsp;</td>
+          <td class='color2-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 3 (Yellow)</td>
+          <td class='color3'>&nbsp;</td>
+          <td class='color3-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 4 (Blue)</td>
+          <td class='color4'>&nbsp;</td>
+          <td class='color4-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 5 (Magenta)</td>
+          <td class='color5'>&nbsp;</td>
+          <td class='color5-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 6 (Cyan)</td>
+          <td class='color6'>&nbsp;</td>
+          <td class='color6-intense'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Color 7 (White)</td>
+          <td class='color7'>&nbsp;</td>
+          <td class='color7-intense'>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <pre class="base00-background base05">
+<span class="base0E">require</span> <span class="base0B">"gem"</span>
+
+<span class="base08">string</span> = <span class="base0B">"base16"</span>
+<span class="base08">symbol</span> = <span class="base0B">:base16</span>
+<span class="base08">fixnum</span> = <span class="base09">0</span>
+<span class="base08">float</span>  = <span class="base09">0.00</span>
+<span class="base08">array</span>  = <span class="base0A">Array</span>.<span class="base0D">new</span>
+<span class="base08">array</span>  = [<span class="base0B">'chris'</span>, <span class="base09">85</span>]
+<span class="base08">hash</span>   = {<span class="base0B">"test"</span> => <span class="base0B">"test"</span>}
+<span class="base08">regexp</span> = <span class="base0C">/[abc]/</span>
+
+<span class="base03"># This is a comment</span>
+<span class="base0E">class</span> <span class="base0A">Person</span>
+  
+  <span class="base0D">attr_accessor</span> <span class="base0B">:name</span>
+  
+  <span class="base0E">def</span> <span class="base0D">initialize</span>(<span class="base08">attributes</span> = {})
+    <span class="base08">@name</span> = <span class="base08">attributes</span>[<span class="base0B">:name</span>]
+  <span class="base0E">end</span>
+  
+  <span class="base0E">def</span> <span class="base0E">self</span>.<span class="base0D">greet</span>
+    <span class="base02-background"><span class="base0B">"hello"</span></span>
+  <span class="base0E">end</span>
+<span class="base0E">end</span>
+
+<span class="base08">person1</span> = <span class="base0A">Person</span>.<span class="base0D">new</span>(<span class="base0B">:name</span> => <span class="base0B">"Chris"</span>)
+<span class="base0D">print</span> <span class="base0A">Person</span>::<span class="base0D">greet</span>, <span class="base0B">" "</span>, <span class="base08">person1</span>.<span class="base0D">name</span>, <span class="base0B">"<span class="base09">\n</span>"</span>
+<span class="base0D">puts</span> <span class="base0B">"another </span><span class="base0F">#{</span><span class="base0A">Person</span>::<span class="base0D">greet</span><span class="base0F">}</span> <span class="base0F">#{</span><span class="base08">person1</span>.<span class="base0D">name</span><span class="base0F">}</span><span class="base0B">"</span>
+      </pre>
+      
+      <pre class="base07-background base02">
+<span class="base0E">require</span> <span class="base0B">"rubygems"</span>
+
+<span class="base08">string</span> = <span class="base0B">"tomorrow"</span>
+<span class="base08">symbol</span> = <span class="base0B">:tomorrow</span>
+<span class="base08">fixnum</span> = <span class="base09">0</span>
+<span class="base08">float</span>  = <span class="base09">0.00</span>
+<span class="base08">array</span>  = <span class="base0A">Array</span>.<span class="base0D">new</span>
+<span class="base08">array</span>  = [<span class="base0B">'chris'</span>, <span class="base09">85</span>]
+<span class="base08">hash</span>   = {<span class="base0B">"test"</span> => <span class="base0B">"test"</span>}
+<span class="base08">regexp</span> = <span class="base0C">/[abc]/</span>
+
+<span class="base03"># This is a comment</span>
+<span class="base0E">class</span> <span class="base0A">Person</span>
+
+  <span class="base0D">attr_accessor</span> <span class="base0B">:name</span>
+
+  <span class="base0E">def</span> <span class="base0D">initialize</span>(<span class="base08">attributes</span> = {})
+    <span class="base08">@name</span> = <span class="base08">attributes</span>[<span class="base0B">:name</span>]
+  <span class="base0E">end</span>
+
+  <span class="base0E">def</span> <span class="base0E">self</span>.<span class="base0D">greet</span>
+    <span class="base06-background"><span class="base0B">"hello"</span></span>
+  <span class="base0E">end</span>
+<span class="base0E">end</span>
+
+<span class="base08">person1</span> = <span class="base0A">Person</span>.<span class="base0D">new</span>(<span class="base0B">:name</span> => <span class="base0B">"Chris"</span>)
+<span class="base0D">print</span> <span class="base0A">Person</span>::<span class="base0D">greet</span>, <span class="base0B">" "</span>, <span class="base08">person1</span>.<span class="base0D">name</span>, <span class="base0B">"<span class="base09">\n</span>"</span>
+<span class="base0D">puts</span> <span class="base0B">"another </span><span class="base0F">#{</span><span class="base0A">Person</span>::<span class="base0D">greet</span><span class="base0F">}</span> <span class="base0F">#{</span><span class="base08">person1</span>.<span class="base0D">name</span><span class="base0F">}</span><span class="base0B">"</span>
+      </pre>
+    </div>
+  </body>
+</html>

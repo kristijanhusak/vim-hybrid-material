@@ -1,0 +1,18 @@
+scheme: "material"
+author: "Sean Washington (http://seanwash.com)"
+base00: "263238" # ???
+base01: "263238" # dark bg
+base02: "37474f" # selection
+base03: "707880" # comment
+base04: "b5bd68" # ???             | green
+base05: "ecefef" # plain text      | light gray
+base06: "ecefef" # light selection | light gray
+base07: "ffffff" # light bg
+base08: "cc6666" # variable        | red
+base09: "cc6666" # fixnum/float    | red
+base0A: "f0c674" # class           | yellow
+base0B: "b5bd68" # string          | green
+base0C: "8abeb7" # regex           | aqua
+base0D: "81a2be" # function        | blue
+base0E: "b294bb" # keyword         | purple
+base0F: "cc6666" # interpolation   | red

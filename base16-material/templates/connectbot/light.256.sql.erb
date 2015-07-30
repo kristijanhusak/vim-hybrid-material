@@ -1,0 +1,27 @@
+UPDATE colors SET scheme = '' WHERE scheme = 0;
+
+INSERT INTO COLORS (number, value, scheme) VALUES (0  , <%= (@base["00"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (1  , <%= (@base["08"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (2  , <%= (@base["0B"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (3  , <%= (@base["0A"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (4  , <%= (@base["0D"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (5  , <%= (@base["0E"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (6  , <%= (@base["0C"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (7  , <%= (@base["05"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (8  , <%= (@base["03"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (9  , <%= (@base["08"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (10 , <%= (@base["0B"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (11 , <%= (@base["0A"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (12 , <%= (@base["0D"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (13 , <%= (@base["0E"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (14 , <%= (@base["0C"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (15 , <%= (@base["07"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (16 , <%= (@base["09"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (17 , <%= (@base["0F"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (18 , <%= (@base["01"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (19 , <%= (@base["02"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (20 , <%= (@base["04"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+INSERT INTO COLORS (number, value, scheme) VALUES (21 , <%= (@base["06"]["hex"].to_i(16)) - ("01000000".to_i(16)) %> , 0);
+
+UPDATE colorDefaults set fg=19, bg=15 WHERE scheme = 0;
+

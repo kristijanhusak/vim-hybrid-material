@@ -1,0 +1,27 @@
+<%
+# Highlighting-kate Template
+# Timothée Poisot (http://timotheepoisot.fr)
+
+%>/* Base16 <%= @scheme %>
+Scheme: <%= @author %> */
+
+table.sourceCode, tr.sourceCode, td.sourceCode, table.sourceCode pre
+{ margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; background-color: #<%= @base["07"]["hex"] %>; color: #<%= @base["02"]["hex"] %> }
+td.nums { text-align: right; padding-right: 5px; padding-left: 5px; background-color: #<%= @base["06"]["hex"] %>; }
+td.sourceCode { padding-left: 5px; }
+code.sourceCode { background-color: #<%= @base["07"]["hex"] %>; }
+pre.sourceCode { background-color: #<%= @base["07"]["hex"] %>; line-height: 125% }
+td.nums pre { background-color: #<%= @base["06"]["hex"] %>; line-height: 125% }
+code.sourceCode span.kw { color: #<%= @base["0D"]["hex"] %>; font-weight: bold } /* Keyword */
+code.sourceCode span.dt { color: #<%= @base["0E"]["hex"] %>} /* Keyword.Type */
+code.sourceCode span.dv { color: #<%= @base["09"]["hex"] %> } /* Literal.Number.Integer */
+code.sourceCode span.bn { color: #<%= @base["09"]["hex"] %> } /* Literal.Number.Hex */
+code.sourceCode span.fl { color: #<%= @base["09"]["hex"] %> } /* Literal.Number.Float */
+code.sourceCode span.ch { color: #<%= @base["0B"]["hex"] %>} /* Literal.String.Char */
+code.sourceCode span.st { color: #<%= @base["0B"]["hex"] %> } /* Literal.String */
+code.sourceCode span.co { color: #<%= @base["03"]["hex"] %> } /* Comment */
+code.sourceCode span.ot { color: #<%= @base["0F"]["hex"] %> } /* Comment.Preproc */
+code.sourceCode span.al { color: #<%= @base["0E"]["hex"] %> } /* Generic.Error */
+code.sourceCode span.fu { color: #<%= @base["0A"]["hex"] %> } /* Name.Function */
+code.sourceCode span.re { color: #<%= @base["0C"]["hex"] %>}
+code.sourceCode span.er { color: #<%= @base["08"]["hex"] %>; border: 1px solid #<%= @base["0E"]["hex"] %> } /* Error */

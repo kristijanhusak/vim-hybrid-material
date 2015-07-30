@@ -1,0 +1,29 @@
+<%
+# Rouge Template (https://github.com/jayferd/rouge/)
+# Jay Adkisson (http://jayferd.us/)
+%>module Rouge
+  module Themes
+    class <%= @scheme %> < Base16
+      name 'base16.<%= @scheme %>'
+      # author <%= @author %>
+      light!
+
+      palette base00: "#<%= @base['00']['hex'] %>"
+      palette base01: "#<%= @base['01']['hex'] %>"
+      palette base02: "#<%= @base['02']['hex'] %>"
+      palette base03: "#<%= @base['03']['hex'] %>"
+      palette base04: "#<%= @base['04']['hex'] %>"
+      palette base05: "#<%= @base['05']['hex'] %>"
+      palette base06: "#<%= @base['06']['hex'] %>"
+      palette base07: "#<%= @base['07']['hex'] %>"
+      palette base08: "#<%= @base['08']['hex'] %>"
+      palette base09: "#<%= @base['09']['hex'] %>"
+      palette base0A: "#<%= @base['0A']['hex'] %>"
+      palette base0B: "#<%= @base['0B']['hex'] %>"
+      palette base0C: "#<%= @base['0C']['hex'] %>"
+      palette base0D: "#<%= @base['0D']['hex'] %>"
+      palette base0E: "#<%= @base['0E']['hex'] %>"
+      palette base0F: "#<%= @base['0F']['hex'] %>"
+    end
+  end
+end
