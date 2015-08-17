@@ -2,7 +2,7 @@
 
 ### Setup
 
-Copy vim color scheme to `~/.vim/colors`
+Copy vim color scheme to `~/.vim/colors`    
 Copy `base16-material.dark.sh` to `~/.config/base16-shell`
 
 Edit `~/.zshrc` or `~/.bashrc` and add
