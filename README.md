@@ -41,6 +41,13 @@ Original [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid), with only colors
 colorscheme hybrid_reverse
 ```
 
+### Airline
+If you are using [vim-airline](https://github.com/bling/vim-airline) plugin, there is a hybrid theme that suites well with this color scheme (Used on screenshots).
+```vimL
+let g:airline_theme = "hybrid"
+```
+
+
 ### Thanks to
 * [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid)
 * [equinusocio/material-theme](https://github.com/equinusocio/material-theme)
