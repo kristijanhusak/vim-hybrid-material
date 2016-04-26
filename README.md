@@ -8,6 +8,7 @@ It includes **2 color schemes**:
 Both schemes are almost similar to [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid), just some colors are switched (Purple with red), to look more like tomorrow-night.
 
 ### Options
+
 If you would like some of the code to be bolded, like functions and language controls, add this option to vimrc:
 
 ```vimL
@@ -25,6 +26,7 @@ Based on [equinusocio/material-theme](https://github.com/equinusocio/material-th
 Only add this to .vimrc after installation:
 
 ```vimL
+set background=dark
 colorscheme hybrid_material
 ```
 
@@ -38,8 +40,17 @@ Original [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid), with only colors
 
 ##### Gvim/MacVim/Vim
 ```vimL
+set background=dark
 colorscheme hybrid_reverse
 ```
+
+### Light version
+Light version is also included, just set background to light instead of dark:
+```vimL
+set background=light
+colorscheme hybrid_material
+```
+
 
 ### Airline
 If you are using [vim-airline](https://github.com/bling/vim-airline) plugin, there is a hybrid theme that suites well with this color scheme (Used on screenshots).
