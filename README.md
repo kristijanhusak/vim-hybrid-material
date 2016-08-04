@@ -7,6 +7,19 @@ It includes **2 color schemes**:
 
 Both schemes are almost similar to [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid), just some colors are switched (Purple with red), to look more like tomorrow-night.
 
+### Installation
+*  [Pathogen](https://github.com/tpope/vim-pathogen)
+  *  `git clone https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vim-hybrid-material`
+  *  Remember to run `:Helptags` to generate help tags
+*  [NeoBundle](https://github.com/Shougo/neobundle.vim)
+  *  `NeoBundle 'kristijanhusak/vim-hybrid-material'`
+*  [Vundle](https://github.com/gmarik/vundle)
+  *  `Plugin 'kristijanhusak/vim-hybrid-material'`
+*  [Plug](https://github.com/junegunn/vim-plug)
+  *  `Plug 'kristijanhusak/vim-hybrid-material'`
+*  manual
+  *  copy all of the files from `colors` directory into your `~/.vim/colors` directory
+
 ### Options
 
 If you would like some of the code to be bolded, like functions and language controls, add this option to vimrc:
