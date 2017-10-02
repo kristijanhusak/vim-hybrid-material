@@ -417,9 +417,9 @@ exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 "   diffIsA
 "   diffNoEOL
 "   diffCommon
-hi! link diffRemoved Constant
+hi! link diffRemoved Special
 "   diffChanged
-hi! link diffAdded Special
+hi! link diffAdded String
 "   diffLine
 "   diffSubname
 "   diffComment
