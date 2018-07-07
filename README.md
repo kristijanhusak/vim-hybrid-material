@@ -81,6 +81,8 @@ If you are using [vim-airline](https://github.com/bling/vim-airline) plugin, the
 let g:airline_theme = "hybrid"
 ```
 
+Font on screenshot: [Inconsolata](https://github.com/powerline/fonts/tree/master/Inconsolata)
+
 
 ### Thanks to
 * [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid)
